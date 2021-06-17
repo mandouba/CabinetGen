@@ -1,0 +1,28 @@
+height_of_cabinet = input("What is the height of the cabinet?: ")
+drawers = input("How many drawer(s) does each cabinet have?: ")
+width = input("Enter the width of opening of cabinet: ")
+depth = input("Enter the depth of cabinet: ")
+material_slides = float(1)
+thickness_of_wood = float(1)
+drawers_space = float(2)
+front_back = float(.5)
+height_of_cabinet = float(height_of_cabinet)
+new_width = float(width) - material_slides - thickness_of_wood
+new_width1 = float(width) - material_slides
+new_depth = float(depth) - drawers_space
+new_height_of_front_and_back = float(height_of_cabinet) / float(drawers) - float(1) - front_back
+new_height_of_sides = float(height_of_cabinet)/ float(drawers) - float(1)
+cut = float(drawers) * float(4) / float(2)
+cut_new = str(cut)
+new_width3 = str(new_width1)
+new_width2 = str(new_width)
+new_depth2 = str(new_depth)
+new_height_of_sides2 = str(new_height_of_sides)
+new_height_of_front_and_back2 = str(new_height_of_front_and_back)
+print("Drawer box dimensions: " + new_width3 + "x" + new_depth2 + "x" + new_height_of_sides2)
+print(" CUT LIST :")
+print(new_width2 + "x" + new_height_of_front_and_back2 + "(" + cut_new + ")")
+print(new_depth2+ "x" + new_height_of_sides2 + "(" + cut_new + ")")
+print("The depth of the box is: " + new_depth2)
+print("The height of the sides of the drawer box is: " + new_height_of_sides2)
+print("The height of the front and back of the box is: " + new_height_of_front_and_back2)
